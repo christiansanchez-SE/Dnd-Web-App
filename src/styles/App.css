@@ -1,0 +1,77 @@
+body {
+  /* border: solid black; */
+  margin: 0; /* Remove default margin */
+  font-size: smaller;
+  font-family: monospace;
+}
+
+#root {
+  /* border: solid blue; */
+  width: 100%;
+  padding: 2em;
+  background-color: rgb(31, 48, 60);
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+}
+
+.app {
+  border: solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: center; /* Center items within the container */
+  gap: 1em; /* Add gap between flex items */
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.character-card {
+  border-radius: 30px;
+  flex: 1 1 calc(33.33% - 2em); /* Flexible basis with gaps accounted for */
+  max-width: 300px; /* Limit max width to a smaller size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em; /* Reduced padding */
+  margin: 0; /* Removed margin to better align with flexbox */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.raceName,
+.subRace,
+.align,
+.languages,
+.ageDes,
+.traits,
+.starting_proficiencies,
+.speed {
+  border-radius: 50px;
+  padding: 1px;
+  margin: 1px; /* Reduced margin */
+  width: 100%; /* Ensure these elements take full width of the card */
+  box-sizing: border-box; /* Ensure padding is included in width calculations */
+}
+
+.button {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 3px #c5c5c5, 0px 0px 3px #ffffff;
+}
+
+.button:hover {
+  border: 1px solid white;
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+
+.button:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}

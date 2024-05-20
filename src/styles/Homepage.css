@@ -1,0 +1,69 @@
+body {
+    min-height: 100vh;
+    margin: 0; 
+    font-size: smaller;
+    font-family: monospace;
+    background-color: #20232a; 
+  }
+  
+  #root {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgb(31, 48, 60);
+    box-sizing: border-box; 
+  }
+  
+  .homepage {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    width: calc(100% - 4em); /* Full width minus margin */
+    font-family: monospace;
+    background-color: #282c34;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    box-sizing: border-box;
+  }
+  
+  .homepage_title {
+    border: solid white;
+    font-size: 5em;
+    font-weight: bolder;
+    color: white;
+    margin: 1em; 
+    padding: 1em; 
+  }
+
+  .class_page_link{
+    padding: 2em;
+  }
+
+  .race_page_link{
+    padding: 2em;
+  }
+  
+  a {
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+  }
+  
+  .button {
+    color: #20232a; /* Button text color */
+    padding: 0.5em 1em; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .button:hover {
+    border: 1px solid white;
+    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+  }
+  
+  .button:active {
+    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+  }

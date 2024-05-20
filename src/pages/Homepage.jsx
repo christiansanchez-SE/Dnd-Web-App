@@ -3,16 +3,20 @@ import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
-    <div>
-      <h3>Homepage</h3>
-      <div>
-        <Link to="/racepage">
-          <h3>RacePage</h3>
+    <div className="homepage">
+      <div className="homepage_title">Dungeons & Dragons</div>
+      <div className="race_page_link">
+        <Link to="/RacePage" className="button">
+          Race Page
         </Link>
       </div>
-      <div className="return">
-        <Link to="/">Go back</Link>
+
+      <div className="class_page_link">
+      <Link to="/ClassesPage" className="button">
+          Class Page
+        </Link>
       </div>
+
     </div>
   );
 }

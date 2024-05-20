@@ -1,0 +1,40 @@
+.race_page {
+  /* border: solid red; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  font-family: monospace;
+}
+
+.race_title {
+  border: solid white;
+  display: flex;
+  justify-content: center;
+  margin: 0.3em;
+  font-size: 5em;
+  color: white;
+}
+
+.race_cards {
+  border: solid white;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly; 
+  align-items: center; 
+  text-align: center;
+  gap: 1em; 
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.return {
+    /* border: solid black; */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 1em auto; 
+    padding: 1em;
+    width: fit-content; 
+  }
