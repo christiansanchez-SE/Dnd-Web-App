@@ -10,6 +10,69 @@ body{
   border: solid black;
   /* max-width: 1280px; */
   margin: 1em;
-  padding: 2em;
+  padding: 2em;body {
+    display: flex; /* Flex to center the content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    margin: 0; /* Remove default margin */
+    font-size: smaller;
+    font-family: monospace;
+  }
+  
+  #root {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgb(31,48,60);
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+  }
+  
+  .app {
+    /* border: solid black; */
+    border-radius: 15px;
+    /* background-color: #ffffff; */
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to next line */
+    justify-content: center; /* Center items within the container */
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    gap: 1em; /* Add gap between flex items */
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  
+  .character-card {
+    /* border: solid dodgerblue; */
+    border-radius: 30px;
+    width: 100%; /* Use full width of container */
+    max-width: 300px; /* Limit max width to a smaller size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em; /* Reduced padding */
+    margin: 1em; /* Reduced margin */
+    box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  .raceName,
+  .subRace,
+  .align,
+  .languages,
+  .ageDes,
+  .traits,
+  .starting_proficiencies,
+  .speed {
+    /* border: solid black; */
+    border-radius: 50px;
+    padding: 2px;
+    margin: 2px; /* Reduced margin */
+    width: 100%; /* Ensure these elements take full width of the card */
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
+    /* box-shadow:  0px 0px 10px rgb(134, 134, 134), 0px 0px 15px #ffffff; */
+  }
+  
   text-align: center;
 }
